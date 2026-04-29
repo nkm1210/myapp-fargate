@@ -18,8 +18,8 @@ app.get('/api/health', async (req, res) => {
     conn = await mysql.createConnection({
       host: process.env.MYSQL_HOST ?? 'localhost',
       database: process.env.MYSQL_DATABASE ?? 'mydb',
-      user: process.env.MYSQL_USER ?? 'myuser',
-      password: process.env.MYSQL_PASSWORD ?? 'mypassword',
+      user: process.env.MYSQL_USER ?? 'admin',
+      password: process.env.MYSQL_PASSWORD ?? 'password',
       connectTimeout: 3000
     })
 
